@@ -26,3 +26,13 @@
 
 // let str=`this is template literals ${1+4+8} ruppes`;
 // console.log(str);
+
+
+//operators
+let a=10;
+let b=20;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
