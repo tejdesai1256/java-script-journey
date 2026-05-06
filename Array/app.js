@@ -107,7 +107,7 @@
 
 // }
 
-//boolean logic
+// boolean logic
 // let num=10;
 // if(num>0 && num%2==0){
 //     console.log("number is positive and even")
@@ -116,3 +116,10 @@
 
 // let isadult=true;
 // console.log(isadult)
+
+//object literals
+let student={
+    name:"tej",
+    age:22,
+    isAdult:true,
+}
