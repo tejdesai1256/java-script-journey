@@ -118,8 +118,39 @@
 // console.log(isadult)
 
 //object literals
-let student={
-    name:"tej",
-    age:22,
-    isAdult:true,
+// let student={
+//     name:"tej",
+//     age:22,
+//     isAdult:true,
+// }
+
+
+//Random number generator
+// let randomNum=Math.random();
+// console.log(randomNum *1000)
+// console.log(Math.floor(randomNum *1000))
+// console.log(Math.abs(randomNum *1000))
+
+// console.log(Math.floor(Math.random() * 5) + 1)
+
+const max= prompt("enter max number");
+const random=Math.floor(Math.random() * max) + 1;
+
+const guess=prompt("enter your guess")
+while(true){
+    if  (guess=="quit"){
+        console.log("quitting game")
+        break;
+    }
+
+if(guess==random){
+    console.log("you guessed it right!")
+    break;
+}
+else if(guess < random){
+    console.log("your guess is too low!")
+    
+} else {
+    console.log("your guess is too high!")
+}
 }
