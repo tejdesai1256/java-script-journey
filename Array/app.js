@@ -133,24 +133,24 @@
 
 // console.log(Math.floor(Math.random() * 5) + 1)
 
-const max= prompt("enter max number");
-const random=Math.floor(Math.random() * max) + 1;
+// const max= prompt("enter max number");
+// const random=Math.floor(Math.random() * max) + 1;
 
-const guess=prompt("enter your guess")
-while(true){
-    if  (guess=="quit"){
-        console.log("quitting game")
-        break;
-    }
+// const guess=prompt("enter your guess")
+// while(true){
+//     if  (guess=="quit"){
+//         console.log("quitting game")
+//         break;
+//     }
 
-if(guess==random){
-    console.log("you guessed it right!")
-    break;
-}
-else if(guess < random){
-    console.log("your guess is too low!")
+// if(guess==random){
+//     console.log("you guessed it right!")
+//     break;
+// }
+// else if(guess < random){
+//     console.log("your guess is too low!")
     
-} else {
-    console.log("your guess is too high!")
-}
-}
+// } else {
+//     console.log("your guess is too high!")
+// }
+// }
