@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>JavaScript Events</h1>
-    <button id="myButton" style="font-size: 20px;" onclick="console.log('button was clicked'); console.log('tej desai')">Click Me</button>
-    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+    <button onclick="displayDate()">The time is?</button>
 
-    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
 
 </body>
 </html>
