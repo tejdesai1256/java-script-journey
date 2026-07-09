@@ -6,19 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-<input id="in01" type="text" placeholder="Press Enter">
-
 <p id="demo"></p>
 
 <script>
-const in01 = document.getElementById("in01");
-
-// Let in01 listen for keydown
-in01.addEventListener("keydown", function (event) {
-// If event.code was "enter", then display text
-  if (event.code === "Enter") {
-    document.getElementById("demo").innerHTML = "Enter was pressed!";
-  }
+// Add Event Listener to document
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("demo").innerHTML = "HTML is loaded!";
 });
 </script>
 </body>
