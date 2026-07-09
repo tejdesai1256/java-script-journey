@@ -6,12 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+<img id="myImg"
+src="https://www.w3schools.com/images/w3schools_green.jpg" width="120" alt="W3Schools green logo" title="W3Schools logo">
+
 <p id="demo"></p>
 
 <script>
-// Add Event Listener to window
-window.addEventListener("load", function () {
-  document.getElementById("demo").innerHTML = "Page is fully loaded!";
+const img = document.getElementById("myImg");git 
+
+// Add Event Listener to img
+img.addEventListener("load", function () {
+  document.getElementById("demo").innerHTML = "Image loaded!";
 });
 </script>
 </body>
