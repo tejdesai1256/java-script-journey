@@ -6,18 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-<img id="myImg"
-src="https://www.w3schools.com/images/w3schools_green.jpg" width="120" alt="W3Schools green logo" title="W3Schools logo">
-
-<p id="demo"></p>
+<p id="clock"></p>
 
 <script>
-const img = document.getElementById("myImg");git 
+// Call showTime every 1000 millisec
+setInterval(showTime, 1000);
 
-// Add Event Listener to img
-img.addEventListener("load", function () {
-  document.getElementById("demo").innerHTML = "Image loaded!";
-});
+// Fuction to display the time
+function showTime() {
+  const d = new Date();
+  document.getElementById("clock").innerHTML =
+  d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+}
 </script>
 </body>
 </html>
