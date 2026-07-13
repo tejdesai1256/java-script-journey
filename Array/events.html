@@ -6,18 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-<a href="https://www.w3schools.com" id="link">Go to W3Schools</a>
-
-<p id="demo"></p>
+ 
+ <h1 onclick="changeText(this)">Click on this text!</h1>
 
 <script>
-const link = document.getElementById("link");
-
-// Let link listen for click
-link.addEventListener("click", function (event) {
-  event.preventDefault();
-  document.getElementById("demo").innerHTML = "Link not opening";
-});
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
 </script>
 </body>
 </html>
