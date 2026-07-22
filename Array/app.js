@@ -154,3 +154,10 @@
 //     console.log("your guess is too high!")
 // }
 // }
+
+//functions
+function sayHello() {
+  return "Hello World";
+}
+
+let message = sayHello();
