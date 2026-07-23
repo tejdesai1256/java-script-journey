@@ -7,9 +7,18 @@
 // };
 
 // Create an Object using new keyword
-const person = new Object({
+// const person = new Object({
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50,
+//   eyeColor: "blue"
+// });
+
+const person = {
   firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue"
-});
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
