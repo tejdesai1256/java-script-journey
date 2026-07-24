@@ -162,8 +162,16 @@
 
 // let message = sayHello();
 
-function multiply(a, b) {
-  return a * b;
-}
+// function multiply(a, b) {
+//   return a * b;
+// }
 
-let result = multiply(4, 5);
+// let result = multiply(4, 5);
+
+
+//single threaded js
+setTimeout(function() {
+  console.log("apna college");
+
+}, 2000);
+console.log("hello world");
