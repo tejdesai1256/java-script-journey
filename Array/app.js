@@ -175,3 +175,16 @@ setTimeout(function() {
 
 }, 2000);
 console.log("hello world");
+
+h1=document.querySelector('h1');
+h1.style.color="red";
+setTimeout(function() {
+    h1.style.color="blue";
+}, 2000);
+
+setTimeout(function() {
+    h1.style.color="green";
+}, 4000);
+setTimeout(function() {
+    h1.style.color="green";
+}, 4000);
