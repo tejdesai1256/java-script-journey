@@ -3,3 +3,4 @@ learning dom
 # leaning events in dom
 mouse events, keyboard events
 initial commit
+learn about callback
