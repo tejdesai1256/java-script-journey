@@ -188,5 +188,5 @@ setTimeout(function() {
 
 setTimeout(function() {
     h1.style.color="green";
-}, 4000);
+}, 3000);
 //inital commit
