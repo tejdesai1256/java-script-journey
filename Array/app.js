@@ -201,14 +201,22 @@ setTimeout(function() {
 //   );
 // });
 
-myPromise
-  .then((value) => `${value} and bar`)
-  .then((value) => `${value} and bar again`)
-  .then((value) => `${value} and again`)
-  .then((value) => `${value} and again`)
-  .then((value) => {
-    console.log(value);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+// myPromise
+//   .then((value) => `${value} and bar`)
+//   .then((value) => `${value} and bar again`)
+//   .then((value) => `${value} and again`)
+//   .then((value) => `${value} and again`)
+//   .then((value) => {
+//     console.log(value);
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
+
+Promise.all([
+    Promise.resolve("Task 1 completed"),
+    Promise.resolve("Task 2 completed"),
+    Promise.reject("Task 3 failed")
+])
+    .then((results) => console.log(results))
+    .catch((error) => console.error(error));
