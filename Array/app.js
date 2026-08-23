@@ -213,11 +213,18 @@ setTimeout(function() {
 //     console.error(err);
 //   });
 
-Promise.all([
+// Promise.all([
+//     Promise.resolve("Task 1 completed"),
+//     Promise.resolve("Task 2 completed"),
+//     Promise.resolve("Task 3 completed"),
+//     Promise.reject("Task 4 failed")
+// ])
+//     .then((results) => console.log(results))
+//     .catch((error) => console.error(error));
+
+Promise.allSettled([
     Promise.resolve("Task 1 completed"),
-    Promise.resolve("Task 2 completed"),
-    Promise.resolve("Task 3 completed"),
-    Promise.reject("Task 4 failed")
+    Promise.reject("Task 2 failed"),
+    Promise.resolve("Task 3 completed")
 ])
-    .then((results) => console.log(results))
-    .catch((error) => console.error(error));
+    .then((results) => console.log(results));
